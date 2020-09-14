@@ -97,8 +97,16 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu,menu)  //裝上menu
+        val actionbar = supportActionBar
+        actionbar?.setDisplayHomeAsUpEnabled(true)
         return super.onCreateOptionsMenu(menu)
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        viewPage2.setCurrentItem(0)         //跳到page0
+        return super.onSupportNavigateUp()
+    }
+
 }
 
 
