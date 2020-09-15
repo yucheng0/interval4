@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.interval2.*
 import com.example.interval2.databinding.FragmentSetBinding
 import com.google.gson.Gson
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_set.*
 
 
@@ -188,6 +189,9 @@ class SetFragment : Fragment() {
         //    findNavController().navigate(R.id.mainFragment)
 
 
+   //         tabLayout.getTabAt(0)?.select()
+
+   //        viewPage2.setCurrentItem(0)  會當機
         }   //btnok end */
 
     }   //on created
